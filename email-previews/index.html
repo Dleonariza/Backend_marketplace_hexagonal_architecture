@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>LUXE Email Templates - Preview</title>
+<style>
+  body { margin: 0; font-family: 'Segoe UI', Helvetica, Arial, sans-serif; background: #F8FAFC; display: flex; height: 100vh; }
+  nav { width: 240px; background: #ffffff; border-right: 1px solid #eaedff; padding: 24px 0; overflow-y: auto; flex-shrink: 0; }
+  nav h1 { font-size: 20px; color: #004ac6; text-align: center; margin: 0 0 4px 0; letter-spacing: -0.5px; }
+  nav p { font-size: 11px; color: #64748B; text-align: center; margin: 0 0 20px 0; }
+  nav a { display: block; padding: 10px 24px; font-size: 14px; color: #131b2e; text-decoration: none; }
+  nav a:hover { background: #f2f3ff; }
+  nav a.active { background: #eaedff; color: #004ac6; font-weight: 600; border-right: 3px solid #2563eb; }
+  iframe { flex: 1; border: 0; height: 100%; }
+</style>
+</head>
+<body>
+<nav>
+  <h1>LUXE</h1>
+  <p>Email template previews</p>
+  <a href="preview_welcome.html" target="frame" class="active">Welcome</a>
+  <a href="preview_otp.html" target="frame">OTP Verification</a>
+  <a href="preview_recovery.html" target="frame">Password Recovery</a>
+  <a href="preview_seller.html" target="frame">Seller Accepted</a>
+  <a href="preview_shipping.html" target="frame">Shipping Confirmation</a>
+  <a href="preview_order_confirmation.html" target="frame">Order Confirmation</a>
+  <a href="preview_review.html" target="frame">Review Request</a>
+</nav>
+<iframe name="frame" src="preview_welcome.html" title="Email template preview"></iframe>
+<script>
+  const links = document.querySelectorAll('nav a');
+  links.forEach((link) => link.addEventListener('click', () => {
+    links.forEach((l) => l.classList.remove('active'));
+    link.classList.add('active');
+  }));
+</script>
+</body>
+</html>
