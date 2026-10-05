@@ -49,7 +49,7 @@ This repository is my answer to that pressure: 603 production classes organized 
 
 | Component | Choice | Note |
 |---|---|---|
-| Language | Java 21 | Records, `sealed`, pattern matching in `switch` |
+| Language | Java 21 |  |
 | Framework | Spring Boot 4.0.6 | Web MVC, Security, Data JPA, Validation, Mail, Actuator |
 | Database | PostgreSQL | Hibernate as ORM |
 | Authentication | JWT (jjwt 0.12.6) | Access token plus rotating refresh token |
