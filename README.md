@@ -49,7 +49,7 @@ Este repositorio es mi respuesta a esa presión: 603 clases de producción organ
 
 | Componente | Elección | Nota |
 |---|---|---|
-| Lenguaje | Java 21 | Records, `sealed`, pattern matching en `switch` |
+| Lenguaje | Java 21 |  |
 | Framework | Spring Boot 4.0.6 | Web MVC, Security, Data JPA, Validation, Mail, Actuator |
 | Base de datos | PostgreSQL | Hibernate como ORM |
 | Autenticación | JWT (jjwt 0.12.6) | Access token + refresh token rotativo |
